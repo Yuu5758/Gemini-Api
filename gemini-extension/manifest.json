@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini Api Agent",
+  "version": "2.2.0",
+  "description": "Auto-syncs Google Gemini cookies to your local Free Gemini API server",
+  "permissions": ["cookies", "storage", "alarms", "clipboardWrite"],
+  "host_permissions": [
+    "*://*.google.com/*",
+    "*://*.google.co/*",
+    "*://*.googleusercontent.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Gemini Api Agent",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
